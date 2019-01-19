@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_marginTop="70dp"
+            android:src="@drawable/logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <EditText
+        android:id="@+id/email"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mail"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_shape"
+        android:paddingLeft="10dp"
+        android:hint="E-mail"
+        android:layout_width="300dp"
+        android:layout_height="45dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/pass"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_shape"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="45dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:foreground="?android:attr/selectableItemBackground"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_shape"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:layout_margin="10dp"
+        android:layout_width="300dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:textColor="#fff"
+        android:id="@+id/questions"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
